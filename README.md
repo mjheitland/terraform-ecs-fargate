@@ -8,4 +8,6 @@ Terraform config for deploying docker containers to ECS using Fargate launch typ
 4. Open browser with alb url that you got from the previous step on port 3000 (you should see some JSON getting returned)
 5. terraform destroy -auto-approve
 
-[Task Definition Parameters](https://medium.com/@bradford_hamilton/deploying-containers-on-amazons-ecs-using-fargate-and-terraform-part-2-2e6f6a3a957f)
+[Task Definition Parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html)
+
+[Tutorial for this project](https://medium.com/@bradford_hamilton/deploying-containers-on-amazons-ecs-using-fargate-and-terraform-part-2-2e6f6a3a957f)
