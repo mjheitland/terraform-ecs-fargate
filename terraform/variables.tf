@@ -17,17 +17,18 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "bradfordhamilton/crystal_blockchain:latest"
+  #default     = "amazon/amazon-ecs-sample" # Needs path "/" for ALB target group health check!
+  default     = "jenkins/jenkins:lts" # Needs path "/login" for ABL target group health check!
 }
 
 variable "app_port" {
   description = "Port exposed by the docker image to redirect traffic to"
-  default     = 3000
+  default     = 8080
 }
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 3
+  default     = 2
 }
 
 variable "health_check_path" {
