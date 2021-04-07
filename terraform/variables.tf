@@ -17,13 +17,13 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  #default     = "amazon/amazon-ecs-sample" # Needs path "/" for ALB target group health check!
-  default     = "jenkins/jenkins:lts" # Needs path "/login" for ABL target group health check!
+  default     = "amazon/amazon-ecs-sample" # Needs health_check_path "/" for ALB target group health check!
+  #default     = "jenkins/jenkins:lts" # Needs health_check_path "/login" for ABL target group health check!
 }
 
 variable "app_port" {
   description = "Port exposed by the docker image to redirect traffic to"
-  default     = 8080
+  default     = 80
 }
 
 variable "app_count" {
